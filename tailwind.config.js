@@ -7,7 +7,7 @@ module.exports = {
     extend: {},
     fontFamily: {
       sans: [
-        'mulish, sans-serif'
+        "mulish", "sans-serif"
       ]
     }
   },

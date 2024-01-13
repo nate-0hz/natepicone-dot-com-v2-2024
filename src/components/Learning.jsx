@@ -1,8 +1,8 @@
 
 
-export default function Learning() {
+export default function Learning({ className }) {
   return (
-    <div className="font-sans">
+    <div className={ `font-sans ${className}` } >
       <h4 className=" text-sky-300 uppercase pt-5 pb-3">learning</h4>
       <p className="text-slate-300 py-1.5">
         Continuous improvement and gaining new skills are integral to me, as is my love for exploring new tools and tech.

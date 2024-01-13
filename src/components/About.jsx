@@ -1,8 +1,8 @@
 
 
-export default function About() {
+export default function About({ className }) {
   return (
-    <div className="font-sans">
+    <div className={ `font-sans ${className}` }>
       <h4 className=" text-sky-300 uppercase pt-5 pb-3">about</h4>
       <p className="text-slate-300 py-1.5">
         My interest in software development started at age eight, when my parents bought a

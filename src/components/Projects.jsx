@@ -3,19 +3,22 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { faJs, faReact, faNodeJs } from '@fortawesome/free-brands-svg-icons';
 import { DiMongodb } from "react-icons/di";
 import { SiExpress, SiTailwindcss, SiMui } from "react-icons/si";
+import { IoOpenOutline } from "react-icons/io5";
 
 
 library.add(faJs, faReact, faNodeJs)
 
-export default function Projects() {
+export default function Projects({ className }) {
 
   return (
-    <div className="font-sans">
+    <div className={ `font-sans ${className}` }>
       <h4 className=" text-sky-300 uppercase pt-5 pb-3">select projects</h4>
       <div className="">
-        <p className="text-slate-200 font-extrabold">
-          We'ppreciate
-        </p>
+        <a href="https://playful-pudding-8faa4e.netlify.app/" rel="noreferrer" target="_blank">
+          <p className="text-slate-200 font-extrabold">
+            We'ppreciate <IoOpenOutline className="inline text-slate-500" />
+          </p>
+        </a>
         <div className="flex flex-row start max-w-28 py-2">
           <FontAwesomeIcon icon="fa-brands fa-js" style={{color: "#FFD43B",}} className="pr-1 scale-200" />
           <FontAwesomeIcon icon="fa-brands fa-react" style={{color: "#61dbfb",}} className="pr-1" />
@@ -26,7 +29,7 @@ export default function Projects() {
         </div>
         <p className="text-slate-300 ">
           Full stack employee recognition application, built in a social media format, with a focus on celebrating peer success. 
-          Built on MERN stack with MUI. Currently in Alpha, and in active development.
+          Built on MERN stack with MUI. Currently in Alpha, and in active development. Contact me for access.
         </p>
       </div >
       <div className="pt-3">
