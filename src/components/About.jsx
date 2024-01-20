@@ -3,8 +3,8 @@
 export default function About({ className }) {
   const pStyling = "py-1.5"
   return (
-    <div className={ `font-sans ${className}` }>
-      <h3 className=" text-sky-600 uppercase text-xl pt-5 pb-3">about</h3>
+    <div className={ `font-sans ${className} lg:py-16` }>
+      <h3 className=" text-sky-600 uppercase text-xl lg:text-3xl pt-5 pb-3">about</h3>
       <p className="py-1.5">
         My interest in software development started in primary school, when my parents bought a
         Commodore VIC-20. Instantly my free time was gobbled up with writing line after 

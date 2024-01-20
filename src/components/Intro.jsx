@@ -3,7 +3,7 @@
 export default function Intro({ className }) {
   return (
     <div className={ `font-sans ${className}` }>
-      <div className="py-3">
+      <div className="py-3 md:py-0">
         <h3 className="text-slate-600 leading-relaxed">
           <span>I am a </span>
           <span className="font-bold">curious </span> 

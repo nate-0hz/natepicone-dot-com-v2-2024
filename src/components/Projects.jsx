@@ -36,8 +36,8 @@ export default function Projects() {
   ]
   
   return (
-    <div className="font-sans text-slate-300 pt-6">
-    <h4 className="text-sky-600 text-xl uppercase">
+    <div className="font-sans text-slate-300 py-6 lg:py-16">
+    <h4 className="text-sky-600 text-xl lg:text-3xl uppercase">
       select projects
     </h4>
     {projects.map(project => <Project key={project.title} {...project} />)}
