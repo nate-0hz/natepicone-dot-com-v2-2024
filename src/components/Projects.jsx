@@ -1,7 +1,7 @@
 
 import { IoOpenOutline } from "react-icons/io5";
 import nateImage from "../assets/natepicone-logo-256.png";
-// import Tags from "./ui/tags"
+import Tags from "./ui/tags"
 import Project from "./Project";
 
 

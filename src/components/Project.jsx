@@ -17,32 +17,14 @@ export default function Project({ image, link, title, tags, description }) {
               <p className="mt-5 line-clamp-5 text-sm leading-6 text-gray-600">
                 {description}
               </p>
+              <div className="pt-2">
+                {tags.map(tag => <Tags key={tag} techName={tag} />)}
+              </div>
           </a>
         </div>
         <div className="group relative">
-          {/* <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-            <a href={post.href}>
-              <span className="absolute inset-0" />
-              {title}
-            </a>
-          </h3> */}
         </div>
       </article>
-
-      {/* <section className="md:grid md:grid-cols-4 md:gap-16 md:grid-rows-1 pt-2">
-        <img src={image} className="md:col-span-1 w-24 " />
-        <div className="md:col-span-1">
-         
-          <div className="space-x-2 col-span-1">
-            {tags.map(tag => <Tags key={tag} techName={tag} />)}
-          </div>
-        </div>
-        <div className="col-span-2">
-          <p className="text-slate-600 ">
-            {description}
-          </p>
-        </div>
-      </section> */}
     </>
   );
 }

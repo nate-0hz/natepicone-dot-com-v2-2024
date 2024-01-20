@@ -38,8 +38,8 @@ export const techStyles = {
   },
   flask: {
     name: 'Flask',
-    tagColour: 'bg-slate-700',
-    textColor: 'text-slate-50'
+    tagColour: 'bg-slate-200',
+    textColor: 'text-slate-950'
   },
   mui: {
     name: 'MUI',
@@ -62,7 +62,7 @@ export default function Tags({ techName }) {
   const { name, tagColour, textColour } = techStyles[techName];
 
   return(
-    <span className={`inline-block rounded-full px-2 py-0.25 text-xs font-bold uppercase ${textColour} ${tagColour}`}>
+    <span className={`inline-block rounded-full mx-1 px-2 my-1 py-0.25 text-xs font-bold uppercase ${textColour} ${tagColour}`}>
       {name}
     </span>
   )
