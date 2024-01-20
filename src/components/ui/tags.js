@@ -51,9 +51,6 @@ export const techStyles = {
     tagColour: 'bg-sky-500',
     textColour: 'text-slate-50'
   },
-
-
-
 }
 
 export default function Tags({ techName }) {

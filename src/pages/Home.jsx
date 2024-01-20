@@ -11,7 +11,7 @@ import HomeHeading from '../components/HomeHeading';
 export default Home
 function Home() {
   return (
-    <div className="bg-slate-300 text-sky-900 px-6 md:px-0 py-6 md:grid md:grid-cols-7 md:grid-row-1 gap-4">
+    <div className="bg-slate-200 text-sky-900 px-6 md:px-0 py-6 md:grid md:grid-cols-7 md:grid-row-1 gap-4">
       <div className=""></div>
       <div className="md:col-span-5">
         {/* mobile hero section layout */}

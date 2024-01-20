@@ -1,17 +1,20 @@
 
 
 export default function About({ className }) {
+  const pStyling = "py-1.5"
   return (
     <div className={ `font-sans ${className}` }>
       <h3 className=" text-sky-600 uppercase text-xl pt-5 pb-3">about</h3>
       <p className="py-1.5">
-        My interest in software development started at age eight, when my parents bought a
-        Commodore VIC-20. Suddenly nights and weekends were gobbled up with writing line after 
-        line of BASIC code, and saving it to a casette tape. I love how far we have come.
+        My interest in software development started in primary school, when my parents bought a
+        Commodore VIC-20. Instantly my free time was gobbled up with writing line after 
+        line of BASIC, and saving it all to a casette tape, leaving dad with nothing to listen 
+        to in the car. I love how far tech has come.
       </p>
       <p className="py-1.5">
-        A few years later, when our first desktop arrived, my interest moved into the command line, but by then I was 
-        a teenager, and all sorts of other things were competing for my attention.
+        A few years later we received our first desktop, and my interest moved into the command 
+        line, but by then I was a teenager, and all sorts of other things were competing for my 
+        attention!
       </p>
       <p className="py-1.5">
         Later, my interest in software was renewed when I saw the importance that applications
@@ -22,8 +25,9 @@ export default function About({ className }) {
         and looking for any opportunity to grow knowledge, and apply that for your benefit.
       </p>
       <p className="py-1.5">
-        I am focussing more this year on being better with downtime, and when not at my computer, I am likely spending 
-        time with my husband, trying new foods, learning emerging tech, or armchair travelling.
+        I am focussing more this year on being better with downtime, and when not at my 
+        laptop, I am likely reading, spending time with my husband, exploring new food, learning 
+        about emerging tech, building my own skills, or armchair travelling. 
       </p>
     </div>
   )
