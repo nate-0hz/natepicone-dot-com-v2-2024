@@ -5,7 +5,7 @@ import Home from './pages/Home';
 function App() {
   return (
    <BrowserRouter >
-   <Header className="md:sticky md:top-0" />
+   <Header className="sticky top-0" />
     <Routes>
       <Route path="/" element={<Home />} />
     </Routes>

@@ -3,8 +3,8 @@ import headerLogo from '../assets/natepicone-logo-256.png'
 function Header({ className }) {
 
   return (
-    <header className={`bg-sky-950 ${className}`}>
-      <nav className="mx-auto flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <header className={`bg-amber-300 text-sky-900 z-50 ${className}`}>
+      <nav className="mx-auto flex items-center justify-between border-b-2 border-amber-300 p-6 lg:px-8" aria-label="Global">
         <a href="#" className="-m-1.5 p-1.5">
           <span className="sr-only">nate picone</span>
           <img className="h-8 w-auto" src={headerLogo} alt="" />

@@ -2,27 +2,50 @@ import Intro from '../components/Intro';
 import About from '../components/About';
 import Learning from '../components/Learning';
 import Socials from '../components/Socials';
-import './Home.css';
-import nateImage from '../assets/nate-image-crop.png'
+import ProfileImage from '../components/ProfileImage';
 import Projects from '../components/Projects';
-
-//  use: https://stackoverflow.com/questions/74393652/tailwind-grid-height
+import HomeHeading from '../components/HomeHeading';
 
 
 
 export default Home
 function Home() {
   return (
-    <div className="bg-sky-950 px-6 py-6 md:grid md:grid-cols-7 md:grid-rows-1 gap-4 " >
-      <div className="md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 md:fixed md:max-w-72" >
-        <Intro />
-        <img src={nateImage} className="w-96 pt-6" alt="an outline drawing of Nate"></img>
-        <Socials />
-      </div>
-      <div className="md:col-start-5 lg:col-start-4 md:col-end-8 md:row-start-1 md:row-end-2">
-        <About />
-        <Projects  />
-        <Learning />
+    <div className="bg-slate-300 text-sky-900 px-6 md:px-0 py-6 md:grid md:grid-cols-7 md:grid-row-1 gap-4">
+      <div className=""></div>
+      <div className="md:col-span-5">
+        {/* mobile hero section layout */}
+        <div className="md:hidden grid">
+          <div className="grid grid-cols-1 grid-rows-2 h-screen min-h-0">
+            <div className="row-span-1 overflow-hidden">
+              <ProfileImage className="" />
+            </div>
+            <div className="row-span-1 overflow-auto">
+              <HomeHeading className="pt-2"/>
+              <Intro className="pt-2"/>
+              <Socials className="pt-2"/>
+            </div>
+          </div>
+        </div>
+
+        {/* table hero section layout */}
+        <div className="hidden md:block" >
+          <div className="md:grid md:grid-cols-2 md:auto-rows-min">
+            <div className="order-last md:col-span-1 md:flex md:flex-col md:justify-center">
+              <HomeHeading className=""/>
+              <Intro className=""/>
+              <Socials className=""/>
+            </div>
+            <ProfileImage className="md:col-span-1 h-full" />
+          </div>
+        </div>
+
+        {/* common rest of page */}
+        <div>
+          <About />
+          <Projects  />
+          <Learning />
+        </div>
       </div>
     </div>
   )
